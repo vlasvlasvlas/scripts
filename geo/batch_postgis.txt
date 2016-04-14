@@ -1,0 +1,53 @@
+#!/bin/bash
+#este script genera un batch de todos los shapefiles
+
+echo -n "full path para los shp ? "
+read pathshp
+echo -n "usuario de postgres ? "
+read pguser
+echo -n "geodb ? "
+read geodb
+echo "el path es $pathshp/*.shp"
+echo "el user es $pguser"
+echo "la geodb es $geodb"
+read -p "Si los datos son correctos, continue. sino cancele. (CTRL+C)"
+read -p "esta seguro de lo que esta haciendo?"
+
+
+FILES=$pathshp/*.shp
+for f in $FILES
+do
+
+        echo "---"
+        echo "fullpath/nombre.ext: $f"
+        echo "fullpath/nombre: $(echo $f | sed 's/\(.*\)..../\1/' )"
+        echo "fullpath: ${f%/*}"
+        echo "nombre: $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g')"
+        echo "nombre.ext: $(echo $f | sed 's!.*/!!')"
+        echo "---"
+
+#Opcion1
+echo "/path/hasta/el/binario/shp2pgsql -I -s 4326 -W latin1  $f  $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g')  | /path/hasta/el/binario/psql -U $pguser -d $geodb"
+##
+##  -I para que cree un indice geometrico.
+##  -s la proyeccion 4326 = WGS84
+##  -W el charset, es muy importante usar latin1 si tienen acentos.
+##  -U el usuario de la base de datos
+##  -d la base de datos que van a usar.
+
+#Opcion2 Ok! :P
+echo "shp2pgsql $f $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g') > $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g').sql"
+echo "chmod 777 $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g').sql"
+echo "psql -U $pguser -d $geodb -f $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g').sql"
+echo "chmod 644 $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g').sql"
+echo "lista capa $(echo $f | sed 's!.*/!!' | sed 's/\.shp$//g') ( $f )"
+echo "-------------"
+#Remove echos for production
+
+
+done
+
+
+
+
+
