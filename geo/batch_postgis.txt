@@ -1,5 +1,5 @@
 #!/bin/bash
-#este script genera un batch de todos los shapefiles
+#Script para subir shapefiles en forma batch a PostGis.
 
 echo -n "full path para los shp ? "
 read pathshp
