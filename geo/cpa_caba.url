@@ -1,0 +1,15 @@
+usando su servicio solo con calle altura:
+
+ej1:
+https://ws.usig.buenosaires.gob.ar/datos_utiles?callback=jQuery19104530806774606042_1465563731565&calle=DIAZ+VELEZ+AV.&altura=4518
+&calle=DIAZ+VELEZ+AV.
+&altura=4518
+
+respuesta: "codigo_postal_argentino":"C1405DCN"
+
+ej2:
+https://ws.usig.buenosaires.gob.ar/datos_utiles?callback=jQuery19104530806774606042_1465563731565&calle=VALLE&altura=174
+&calle=VALLE
+&altura=174
+
+respuesta: "codigo_postal_argentino":"C1424BVD"
