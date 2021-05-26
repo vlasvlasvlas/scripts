@@ -1,5 +1,6 @@
 import pandas as pd
-archivos = ('records','ten_items','ten_lots','ten_notifiedSuppliers','contracts')
+# just use the csv files you like to append full range 2010-2021 into a single csv file
+archivos = ('records','ten_items','ten_lots','ten_notifiedSuppliers','contracts','awa_items','awards','con_documents','con_amendments')
 anios = range(2010,2022)
 for archivo in archivos:
     dfTotal = pd.DataFrame()
