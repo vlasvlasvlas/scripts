@@ -1,0 +1,55 @@
+INSERT INTO sdmx.[concepts] (id,urn,corerepresentation,corerepresentationagency,lang,"name") VALUES
+	 ('FREQ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).FREQ','CL_FREQ','SDMX','en','Frequency'),
+	 ('ADJUSTMENT','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).ADJUSTMENT','CL_ADJUSTMENT','ESTAT','en','Adjustment indicator '),
+	 ('REF_AREA ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).REF_AREA','CL_AREA','IMF ','en','Reference area'),
+	 ('COUNTERPART_AREA','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).COUNTERPART_AREA','CL_AREA','IMF ','en','Counterpart area'),
+	 ('REF_SECTOR','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).REF_SECTOR','CL_SECTOR','ESTAT','en','Reporting institutional sector'),
+	 ('COUNTERPART_SECTOR','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).COUNTERPART_SECTOR','CL_SECTOR','ESTAT','en','Counterpart institutional sector'),
+	 ('CONSOLIDATION','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).CONSOLIDATION ','CL_NA_CONSOLIDAT','ESTAT','en','Consolidation Status '),
+	 ('ACCOUNTING_ENTRY','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).ACCOUNTING_ENTRY','CL_ACCOUNT_ENTRY','IMF ','en','Accounting Entry'),
+	 ('STO ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).STO ','CL_NA_STO','ESTAT','en','Stocks, Transactions, Other Flows '),
+	 ('INSTR_ASSET','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).INSTR_ASSET','CL_INSTR_ASSET','ESTAT','en','Instrument and Assets Classification');
+INSERT INTO sdmx.[concepts] (id,urn,corerepresentation,corerepresentationagency,lang,"name") VALUES
+	 ('MATURITY ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).MATURITY','CL_MATURITY','ESTAT','en','Original and Residual Maturity'),
+	 ('ACTIVITY ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).ACTIVITY','CL_ACTIVITY','ESTAT','en','Activity classification'),
+	 ('ACTIVITY_TO','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).ACTIVITY_TO','CL_ACTIVITY','ESTAT','en','Activity classification (input-output industry*industry) '),
+	 ('PRODUCT','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).PRODUCT','CL_PRODUCT','ESTAT','en','Product classification'),
+	 ('PRODUCT_TO','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).PRODUCT_TO','CL_PRODUCT','ESTAT','en','Product classification (input-output product*product)'),
+	 ('EXPENDITURE','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).EXPENDITURE',NULL,NULL,'en','Expenditure (COFOG, COICOP, COPP or COPNI) '),
+	 ('PENSION_FUNDTYPE','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).PENSION_FUNDTYPE','CL_PENS_FUNDTYPE','ESTAT','en','Pension Fund Type '),
+	 ('UNIT_MEASURE ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).UNIT_MEASURE','CL_UNIT','IMF ','en','Unit'),
+	 ('CURRENCY_DENOM','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).CURRENCY_DENOM','CL_UNIT','IMF ','en','Currency of denomination '),
+	 ('VALUATION','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).VALUATION ','CL_VALUATION ','ESTAT','en','Valuation');
+INSERT INTO sdmx.[concepts] (id,urn,corerepresentation,corerepresentationagency,lang,"name") VALUES
+	 ('PRICES ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).PRICES ','CL_NA_PRICES ','ESTAT','en','Prices '),
+	 ('TRANSFORMATION','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).TRANSFORMATION','CL_TRANSFORMATION ','ESTAT','en','Transformation'),
+	 ('CUST_BREAKDOWN','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).CUST_BREAKDOWN','CL_CUST_BREAKDOWN ','ESTAT','en','Custom breakdown codification'),
+	 ('TIME_PERIOD','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).TIME_PERIOD',NULL,NULL,'en','Time period'),
+	 ('OBS_VALUE','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).OBS_VALUE ',NULL,NULL,'en','Observation value '),
+	 ('REF_YEAR_PRICE','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).REF_YEAR_PRICE',NULL,NULL,'en','Reference year (price)'),
+	 ('COLL_PERIOD','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).COLL_PERIOD',NULL,NULL,'en','Collection period '),
+	 ('EMBARGO_DATE ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).EMBARGO_DATE',NULL,NULL,'en','Embargo date '),
+	 ('OBS_EDP_WBB','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).OBS_EDP_WBB','CL_EDP_WBB','ESTAT','en','EDP working balance basis'),
+	 ('GFS_ECOFUNC','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).GFS_ECOFUNC','CL_GFS_ECOFUNC','ESTAT','en','GFS economic function');
+INSERT INTO sdmx.[concepts] (id,urn,corerepresentation,corerepresentationagency,lang,"name") VALUES
+	 ('GFS_TAXCAT','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).GFS_TAXCAT','CL_GFS_TAXCAT','ESTAT','en','GFS tax category'),
+	 ('TABLE_IDENTIFIER','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).TABLE_IDENTIFIER','CL_NA_TABLEID','ESTAT','en','Table identifier'),
+	 ('REF_PERIOD_DETAIL ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).REF_PERIOD_DETAIL ','CL_REF_PERIOD_DTL ','ESTAT','en','Reference period detail'),
+	 ('COMMENT_DSET ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).COMMENT_DSET',NULL,NULL,'en','Dataset comment '),
+	 ('COMMENT_OBS','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).COMMENT_OBS',NULL,NULL,'en','Comments to the observation value '),
+	 ('COMMENT_TS','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).COMMENT_TS',NULL,NULL,'en','Series comment'),
+	 ('CONF_STATUS','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).CONF_STATUS','CL_CONF_STATUS','SDMX','en','Confidentiality status'),
+	 ('DECIMALS ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).DECIMALS','CL_DECIMALS','SDMX','en','Decimals '),
+	 ('OBS_STATUS','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).OBS_STATUS','CL_OBS_STATUS','SDMX','en','Observation status'),
+	 ('TIME_FORMAT','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).TIME_FORMAT','CL_TIME_FORMAT','SDMX','en','Time format');
+INSERT INTO sdmx.[concepts] (id,urn,corerepresentation,corerepresentationagency,lang,"name") VALUES
+	 ('TIME_PER_COLLECT','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).TIME_PER_COLLECT','CL_TIME_COLLECT ','IMF ','en','Time period collection'),
+	 ('TITLE','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).TITLE',NULL,NULL,'en','Title'),
+	 ('UNIT_MULT','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).UNIT_MULT ','CL_UNIT_MULT ','SDMX','en','Unit multiplier '),
+	 ('LAST_UPDATE','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).LAST_UPDATE',NULL,NULL,'en','Last Update Date'),
+	 ('CUST_BREAKDOWN_LB ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).CUST_BREAKDOWN_LB ',NULL,NULL,'en','Label for custom breakdown '),
+	 ('COMPILING_ORG','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).COMPILING_ORG ','CL_ORGANISATION ','IMF ','en','Compiling organisation'),
+	 ('PRE_BREAK_VALUE ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).PRE_BREAK_VALUE ',NULL,NULL,'en','Pre-break value '),
+	 ('DATA_COMP','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).DATA_COMP ',NULL,NULL,'en','Underlying compilation'),
+	 ('CURRENCY ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).CURRENCY','CL_UNIT','IMF ','en','Currency code used for compilation'),
+	 ('DISS_ORG ','urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=ESTAT:CS_NA(1.5).DISS_ORG','CL_ORGANISATION ','IMF ','en','Dissemination organisation ');

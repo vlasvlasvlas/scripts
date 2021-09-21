@@ -1,0 +1,2 @@
+INSERT INTO sdmx.[keyfamilies] (agencyid,id,urn,"version",isexternalreference,isfinal,"name") VALUES
+	 ('ESTAT','NA_SEC','urn:sdmx:org.sdmx.infomodel.datastructure.DataStructure=ESTAT:NA_SEC(1.5)','1.5','false','true','NA Sector Accounts &amp; Government Finance');

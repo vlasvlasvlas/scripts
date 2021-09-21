@@ -1,0 +1,55 @@
+INSERT INTO sdmx.[cl_transformation] (urn,lang,description,code) VALUES
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2)._Z','en','Not applicable','_Z'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).A1','en','Average, period on period','A1'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).A12','en','12-period moving average','A12'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).A3','en','3-period moving average','A3'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).A4','en','4-period moving average','A4'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).A6','en','6-period moving average','A6'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).C12','en','12-period cumulated sum','C12'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).C16','en','16 period cumulated sum','C16'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).C3','en','3-period cumulated sum','C3'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).C4','en','4-period cumulated sum','C4');
+INSERT INTO sdmx.[cl_transformation] (urn,lang,description,code) VALUES
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).C4G','en','Growth rate, period on period, over 4-period cumulated sum','C4G'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).C6','en','6-period cumulated sum','C6'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).CY','en','Cumulated sum, over 1 year','CY'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).D1','en','Differences, period on period, first order','D1'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).D1D1','en','Differences, period on period, second order','D1D1'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).D4','en','Difference period on 4 periods, first order','D4'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).DY','en','Difference, over 1 year','DY'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).F1','en','Growth rate, flow over stock, period on period','F1'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).F12','en','Growth rate, flow over stock over 12 periods','F12'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).F3','en','Growth rate , flow over stock ,over 3 periods','F3');
+INSERT INTO sdmx.[cl_transformation] (urn,lang,description,code) VALUES
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).F4','en','Growth rate , flow over stock over 4 periods','F4'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).F6','en','Growth rate, flow over stock over 6 periods','F6'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).FO1','en','Contribution to growth rate, flow over stock, period on period','FO1'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).FO12','en','Contribution to growth rate, flow over stock, over 12  periods','FO12'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).FO16','en','Contribution to growth rate, flow over stock, over 16 periods','FO16'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).FO3','en','Contribution to growth rate, flow over stock, over 3 periods','FO3'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).FO4','en','Contribution to growth rate, flow over stock, over 4 periods','FO4'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).FO6','en','Contribution to growth rate, flow over stock, over 6 periods','FO6'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).FY','en','Growth rate, flow over stock, over 1 year','FY'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G1','en','Growth rate, period on period','G1');
+INSERT INTO sdmx.[cl_transformation] (urn,lang,description,code) VALUES
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G10','en','Growth rate, over 10 periods','G10'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G12','en','Growth rate over 12 periods','G12'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G3','en','Growth rate over 3 periods','G3'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G3Y','en','Growth rate, over 3 years','G3Y'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G4','en','Growth rate over 4 periods','G4'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G4Y','en','Growth rate, over 4 years','G4Y'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).G6','en','Growth rate over 6 periods','G6'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GC10Y','en','Compound growth rate, over 10 years','GC10Y'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GC5Y','en','Compound growth rate, over 5 years','GC5Y'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GO1','en','Contribution to growth rate, period on period','GO1');
+INSERT INTO sdmx.[cl_transformation] (urn,lang,description,code) VALUES
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GO12','en','Contribution to growth rate, over 12 periods','GO12'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GO3','en','Contribution to growth rate, over 3 periods','GO3'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GO4','en','Contribution to growth rate, over  4 periods','GO4'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GO6','en','Contribution to growth rate, over 6 periods','GO6'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GOY','en','Contribution to growth rate, over 1 year','GOY'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GR','en','Growth rate, over reference year','GR'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).GY','en','Growth rate, over 1 year','GY'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).LA','en','Annual levels','LA'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).N','en','Non transformed data','N'),
+	 ('urn:sdmx:org.sdmx.infomodel.codelist.Code=ESTAT:CL_TRANSFORMATION(1.2).R1','en','Revisions, difference to last transmission period','R1');
