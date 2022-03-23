@@ -7,8 +7,9 @@ import pandas as pd
 dfurls = pd.read_csv('lista.csv') #to-do: get lista from xlsx web
 urls = dfurls['proyectos']
 dfall = pd.DataFrame()
-for url in urls:
-    print("proyecto:"+url)
+
+for idx, url in enumerate(urls):
+    print(str(idx)+"/"+str(dfurls.shape[0])+' '+url)
     page = requests.get('https://www.iadb.org/es/project/'+str(url))
     if page.status_code == 200:
         soup = BeautifulSoup(page.content, "html.parser")
@@ -27,11 +28,9 @@ for url in urls:
                     data=str(pritem.find('span', class_='project-field-data').string).strip()
                 except:
                     data='-'
-                prcols.append(title)
                 prdata.append(data)
         dfall = dfall.append([prdata])
 
 # export
-dfall.columns = prcols
 print(dfall)
 dfall.to_excel('output.xlsx')
