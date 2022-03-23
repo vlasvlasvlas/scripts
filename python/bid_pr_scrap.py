@@ -22,11 +22,11 @@ for url in urls:
                 try:
                     title=str(pritem.find('div', class_='project-field-title').string).strip()
                 except:
-                    print('-')
+                    title='-'
                 try:
                     data=str(pritem.find('span', class_='project-field-data').string).strip()
                 except:
-                    print('-')
+                    data='-'
                 prcols.append(title)
                 prdata.append(data)
         dfall = dfall.append([prdata])
