@@ -1,3 +1,4 @@
+from ast import Dict
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -6,11 +7,11 @@ import pandas as pd
 
 dfurls = pd.read_csv('lista.csv') #to-do: get lista from xlsx web
 urls = dfurls['proyectos']
-dfall = pd.DataFrame()
-
+dall  = []
 for idx, url in enumerate(urls):
-    print(str(idx)+"/"+str(dfurls.shape[0])+' '+url)
+    print(str(idx+1)+"/"+str(dfurls.shape[0])+' '+url)
     page = requests.get('https://www.iadb.org/es/project/'+str(url))
+    drow = dict()
     if page.status_code == 200:
         soup = BeautifulSoup(page.content, "html.parser")
         results = soup.find(id="main")
@@ -28,9 +29,7 @@ for idx, url in enumerate(urls):
                     data=str(pritem.find('span', class_='project-field-data').string).strip()
                 except:
                     data='-'
-                prdata.append(data)
-        dfall = dfall.append([prdata])
-
-# export
-print(dfall)
-dfall.to_excel('output.xlsx')
+                drow[title] = data
+    dall.append(drow)
+dfall = pd.DataFrame(dall)
+dfall.to_excel('outfull.xlsx')
