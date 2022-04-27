@@ -1,0 +1,496 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/bddra/ontologies/2022/3/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/bddra/ontologies/2022/3/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:inmobiliaria="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria#"
+     xmlns:inmobiliaria_tp2_grupo3="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3">
+        <rdfs:comment>Universidad Austral
+Maestría en Ciencia de Datos
+2022, 1er CUAT, Sede Rosario
+
+Gestión del conocimiento
+Web Semántica
+
+TP2 Knowledge design and representation
+
+Grupo 3
+Vladimiro Bellini
+Elemir Celis Mendoza
+Cristian Di Bono
+Lucas Petralli
+Antonio Rial
+Lucía Vieitez
+Objetivos
+
+Diseñar y desarrollar una ontología básica sobre oferta inmobiliaria.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#gestiona -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#gestiona">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliaria"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#oferta -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#oferta">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#seOfertaEn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#seOfertaEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#seOfertaEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#seUbicaEn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#seUbicaEn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ubicacion"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#aptoCredito -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#aptoCredito">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#baldio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#baldio">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#departamento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#cloacas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#cloacas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#barrio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#fiscal -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#fiscal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#departamento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#gas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#gas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#barrio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#luz -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#luz">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#barrio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#moneda -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#moneda">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ochava -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ochava">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ofertaCasas -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ofertaCasas">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliaria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ofertaDepartamentos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ofertaDepartamentos">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliaria"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ph -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ph">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#socioeconomico -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#socioeconomico">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#barrio"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#superficie -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#superficie">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#superficieCubierta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#superficieCubierta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#valor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#valor">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#vigenciaDesde -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#vigenciaDesde">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#vigenciaHasta -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#vigenciaHasta">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#barrio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#barrio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ubicacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ciudad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ciudad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ubicacion"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#departamento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#departamento">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliaria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliaria"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmueble"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ubicacion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ubicacion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Capital_Federal -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Capital_Federal">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ciudad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Recoleta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Recoleta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#barrio"/>
+        <inmobiliaria_tp2_grupo3:seUbicaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Capital_Federal"/>
+        <inmobiliaria_tp2_grupo3:cloacas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:cloacas>
+        <inmobiliaria_tp2_grupo3:gas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:gas>
+        <inmobiliaria_tp2_grupo3:luz rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:luz>
+        <inmobiliaria_tp2_grupo3:socioeconomico rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ABC1</inmobiliaria_tp2_grupo3:socioeconomico>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Rosario -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Rosario">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#ciudad"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa"/>
+        <inmobiliaria_tp2_grupo3:seOfertaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_002"/>
+        <inmobiliaria_tp2_grupo3:seUbicaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Recoleta"/>
+        <inmobiliaria_tp2_grupo3:baldio rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:baldio>
+        <inmobiliaria_tp2_grupo3:fiscal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inmobiliaria_tp2_grupo3:fiscal>
+        <inmobiliaria_tp2_grupo3:ochava rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inmobiliaria_tp2_grupo3:ochava>
+        <inmobiliaria_tp2_grupo3:ph rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inmobiliaria_tp2_grupo3:ph>
+        <inmobiliaria_tp2_grupo3:superficie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</inmobiliaria_tp2_grupo3:superficie>
+        <inmobiliaria_tp2_grupo3:superficieCubierta rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</inmobiliaria_tp2_grupo3:superficieCubierta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#depto_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#depto_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#departamento"/>
+        <inmobiliaria_tp2_grupo3:seOfertaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_001"/>
+        <inmobiliaria_tp2_grupo3:seOfertaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_003"/>
+        <inmobiliaria_tp2_grupo3:seUbicaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Rosario"/>
+        <inmobiliaria_tp2_grupo3:baldio rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:baldio>
+        <inmobiliaria_tp2_grupo3:cloacas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inmobiliaria_tp2_grupo3:cloacas>
+        <inmobiliaria_tp2_grupo3:fiscal rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inmobiliaria_tp2_grupo3:fiscal>
+        <inmobiliaria_tp2_grupo3:gas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inmobiliaria_tp2_grupo3:gas>
+        <inmobiliaria_tp2_grupo3:ochava rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</inmobiliaria_tp2_grupo3:ochava>
+        <inmobiliaria_tp2_grupo3:superficie rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</inmobiliaria_tp2_grupo3:superficie>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliariaPOSADAS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliariaPOSADAS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliaria"/>
+        <inmobiliaria_tp2_grupo3:gestiona rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_001"/>
+        <inmobiliaria_tp2_grupo3:gestiona rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_002"/>
+        <inmobiliaria_tp2_grupo3:seUbicaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Recoleta"/>
+        <inmobiliaria_tp2_grupo3:ofertaCasas rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:ofertaCasas>
+        <inmobiliaria_tp2_grupo3:ofertaDepartamentos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:ofertaDepartamentos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliariaTRESHERMANOS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliariaTRESHERMANOS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#inmobiliaria"/>
+        <inmobiliaria_tp2_grupo3:gestiona rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_003"/>
+        <inmobiliaria_tp2_grupo3:seUbicaEn rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#Rosario"/>
+        <inmobiliaria_tp2_grupo3:ofertaDepartamentos rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</inmobiliaria_tp2_grupo3:ofertaDepartamentos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_001 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_001">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <inmobiliaria_tp2_grupo3:oferta rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#depto_001"/>
+        <inmobiliaria_tp2_grupo3:moneda>$</inmobiliaria_tp2_grupo3:moneda>
+        <inmobiliaria_tp2_grupo3:valor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">22500000</inmobiliaria_tp2_grupo3:valor>
+        <inmobiliaria_tp2_grupo3:vigenciaDesde rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-01T00:00:00</inmobiliaria_tp2_grupo3:vigenciaDesde>
+        <inmobiliaria_tp2_grupo3:vigenciaHasta rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-06-01T00:00:00</inmobiliaria_tp2_grupo3:vigenciaHasta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_002 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_002">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <inmobiliaria_tp2_grupo3:oferta rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#casa_001"/>
+        <inmobiliaria_tp2_grupo3:moneda>U$D</inmobiliaria_tp2_grupo3:moneda>
+        <inmobiliaria_tp2_grupo3:valor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350000</inmobiliaria_tp2_grupo3:valor>
+        <inmobiliaria_tp2_grupo3:vigenciaDesde rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-01-01T00:00:00</inmobiliaria_tp2_grupo3:vigenciaDesde>
+        <inmobiliaria_tp2_grupo3:vigenciaHasta rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-12-01T00:00:00</inmobiliaria_tp2_grupo3:vigenciaHasta>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_003 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publ_003">
+        <rdf:type rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#publicacion"/>
+        <inmobiliaria_tp2_grupo3:oferta rdf:resource="http://www.semanticweb.org/bddra/ontologies/2022/3/inmobiliaria_tp2_grupo3#depto_001"/>
+        <inmobiliaria_tp2_grupo3:moneda>U$D</inmobiliaria_tp2_grupo3:moneda>
+        <inmobiliaria_tp2_grupo3:valor rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">127000</inmobiliaria_tp2_grupo3:valor>
+        <inmobiliaria_tp2_grupo3:vigenciaDesde>2022-01-01T12:00:00</inmobiliaria_tp2_grupo3:vigenciaDesde>
+        <inmobiliaria_tp2_grupo3:vigenciaHasta>2023-01-01T12:00:00</inmobiliaria_tp2_grupo3:vigenciaHasta>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
